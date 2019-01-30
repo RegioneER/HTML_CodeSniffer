@@ -1,10 +1,20 @@
+/**
+ * 
+ */
+
 _global.HTMLCS_ALLEGATOA = {
     name: 'AllegatoA',
     description: 'Criteri e metodi per la verifica tecnica e requisiti tecnici di accessibilità previsti dalla legge 9 gennaio 2004, n.4',
     sniffs: [
-
+        'Principle1.Guideline1_1.1_1_1',
     ],
 
+    getMsgInfo: function(code) {
+        console.log(code);
+        return HTMLCS_WCAG2AAA.getMsgInfo(code);
+    },
+
+/*
     getMsgInfo: function(code) {
         var principles = {
             'Principle1': {
@@ -23,38 +33,14 @@ _global.HTMLCS_ALLEGATOA = {
                 name: 'Robust',
                 link: 'http://www.w3.org/TR/WCAG20/#robust'
             },
-            'Principle5': {
-                name: 'Robust',
-                link: 'http://www.w3.org/TR/WCAG20/#robust'
-            },
-            'Principle6': {
-                name: 'Robust',
-                link: 'http://www.w3.org/TR/WCAG20/#robust'
-            },
-            'Principle7': {
-                name: 'Robust',
-                link: 'http://www.w3.org/TR/WCAG20/#robust'
-            },
-            'Principle8': {
-                name: 'Robust',
-                link: 'http://www.w3.org/TR/WCAG20/#robust'
-            },
-            'Principle9': {
-                name: 'Robust',
-                link: 'http://www.w3.org/TR/WCAG20/#robust'
-            },
-            'Principle10': {
-                name: 'Robust',
-                link: 'http://www.w3.org/TR/WCAG20/#robust'
-            },
-            'Principle11': {
-                name: 'Robust',
-                link: 'http://www.w3.org/TR/WCAG20/#robust'
-            },
-            'Principle12': {
-                name: 'Robust',
-                link: 'http://www.w3.org/TR/WCAG20/#robust'
-            },
         };
+
+        // criterias
+        var requisiti = {
+            name: 'requisito1'
+
+        }
     },
+*/
+
 }
